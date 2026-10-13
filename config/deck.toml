@@ -1,0 +1,19 @@
+# ai-slide-deck-generator default configuration.
+# Env overrides: AISLIDES_MODEL_ID, AISLIDES_THEME, AISLIDES_TARGET_SLIDES, ...
+
+[deck]
+target_slides = 10
+theme = "midnight"
+max_bullets_per_slide = 5
+max_chars_per_bullet = 140
+
+[provider]
+name = "openai"
+model = "gpt-4o-mini"
+temperature = 0.6
+timeout_s = 45.0
+retry_attempts = 3
+
+[paths]
+cache_dir = "~/.cache/ai_slides"
+themes_dir = "assets/themes"
